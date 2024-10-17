@@ -4,7 +4,7 @@ E-Shop is a responsive, user-friendly mini e-commerce application built with Ang
 
 ## Demo
 
-Check out the live demo of the application: <a href="https://kata-pied.vercel.app/" target="_blank">E-Shop Live Demo</a>
+Check out the live demo of the application: <a href="https://kata-angular.vercel.app" target="_blank">E-Shop Live Demo</a>
 
 ## Features
 
@@ -34,10 +34,12 @@ Check out the live demo of the application: <a href="https://kata-pied.vercel.ap
 
 ## Project Structure
 
+- **ProductListComponent**: Displays a grid of products with animations, allowing users to browse available products.
 - **ProductItemComponent**: Represents each product as an individual interactive card, allowing users to view details and perform actions like adding to the cart.
 - **CartSidebarComponent**: Manages and displays the contents of the shopping cart, providing users with a summary of their selections.
 - **ProductDetailsComponent**: Displays detailed information about a product in a modal, including price, description, and images.
 - **SearchFormComponent**: Provides instant product searches resultat, filtering the product list based on user input.
+- **QuantityCounterComponent**: Allows users to increment, decrement, or remove the product in the cart.
 - **ProductService**: Responsible for fetching products from the API, managing the product list, and handling search functionality.
 - **CartService**: Manages cart operations, including adding/removing products, handling state, and interacting with local storage for persistence.
 
