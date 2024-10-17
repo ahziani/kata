@@ -1,0 +1,31 @@
+<header class="shadow-light bg-white sticky z-20 top-0 p-4">
+  <div class="container mx-auto flex flex-wrap justify-between items-center">
+    <div>
+      <a
+        class="logo font-semibold text-blue hover:text-black ease-in duration-300"
+        href="/"
+        aria-label="Logo"
+        >E-SHOP
+      </a>
+    </div>
+
+    <!-- Search Form -->
+    <div class="order-3 md:order-2 w-full md:w-auto mt-2 md:mt-0">
+      <eshop-search-form></eshop-search-form>
+    </div>
+
+    <!-- To open the cart sidebar -->
+    <button
+      class="sidebar order-2 md:order-3"
+      (click)="toggleCart()"
+      type="button">
+      <mat-icon class="text-blue cursor-pointer">shopping_cart</mat-icon>
+      <span class="text-16">
+        {{ totalPrice() > 0 ? (totalPrice() | currency) : 'Cart' }}</span
+      >
+      <span class="cart-price" *ngIf="totalQuantity() > 0">{{
+        totalQuantity()
+      }}</span>
+    </button>
+  </div>
+</header>

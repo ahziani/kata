@@ -1,0 +1,7 @@
+{
+  "name": "E-SHOP",
+  "entryPoints": ["src/**/*.ts"],
+  "out": "docs",
+  "hideGenerator": true,
+  "excludePrivate": true
+}

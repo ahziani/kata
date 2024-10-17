@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+.container {
+  max-width: 1024px;
+}
+
+.btn-primary {
+  @apply bg-blue text-white rounded-4 p-2;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    @apply bg-blue-dark;
+  }
+}

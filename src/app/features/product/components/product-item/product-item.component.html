@@ -1,0 +1,32 @@
+<article class="relative border border-grey p-4 h-full mt-4 pb-0 rounded-2">
+  <!-- Image with a hover to show View Details -->
+  <div class="product-item_image overflow-hidden relative text-center">
+    <img
+      [src]="product.image"
+      [alt]="product.title"
+      class="inline-block h-48"
+      loading="lazy" />
+    <div
+      class="view-details flex items-center justify-center absolute top-0 left-0 w-full h-full bg-opacity-70 bg-white opacity-0 hover:opacity-100">
+      <button
+        type="button"
+        (click)="viewDetails()"
+        class="text-14 text-white bg-blue-dark py-2 px-4 rounded-lg opacity-90">
+        View Details
+      </button>
+    </div>
+  </div>
+
+  <!-- Product price and addToCart -->
+  <div class="mt-4">
+    <div class="flex justify-between">
+      <p class="text-black text-24 font-bold mb-4">${{ product.price }}</p>
+      <button class="btn-primary btn-animate w-[2.8rem]" (click)="addToCart()">
+        <mat-icon class="align-middle inline-block">add_shopping_cart</mat-icon>
+      </button>
+    </div>
+    <h3 class="mt-2">
+      {{ product.title }}
+    </h3>
+  </div>
+</article>

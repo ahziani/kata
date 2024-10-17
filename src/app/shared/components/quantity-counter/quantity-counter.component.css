@@ -1,0 +1,12 @@
+.btn-increment,
+.btn-decrement {
+  mat-icon {
+    width: 20px;
+  }
+}
+
+.btn-increment:disabled,
+.btn-decrement:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}

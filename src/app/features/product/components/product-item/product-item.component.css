@@ -1,0 +1,23 @@
+.view-details {
+  transition: all 0.3s ease-in-out;
+}
+
+.product-item_image:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* When hover add animation to move the icon up and down */
+.btn-animate:hover mat-icon {
+  animation: bounce 0.8s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(4px);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}

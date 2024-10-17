@@ -1,0 +1,25 @@
+.cart-price {
+  @apply rounded-full text-12 inline-block absolute text-white font-bold text-center text-10 leading-4 bg-blue-dark;
+
+  width: 16px;
+  height: 16px;
+  right: -2px;
+  top: -6px;
+}
+
+.sidebar {
+  @apply flex items-center relative text-blue border border-blue rounded-full px-[10px] py-[6px];
+  transition: all 0.3s ease-in-out;
+
+  mat-icon {
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    @apply text-white bg-blue;
+
+    mat-icon {
+      @apply text-white;
+    }
+  }
+}

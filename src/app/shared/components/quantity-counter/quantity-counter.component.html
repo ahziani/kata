@@ -1,0 +1,10 @@
+<div
+  class="flex items-center justify-between border border-grey rounded-4 h-[35px]">
+  <button (click)="decrement()" class="btn-decrement">
+    <mat-icon class="text-16 align-middle">remove</mat-icon>
+  </button>
+  <span class="font-semibold">{{ quantity }}</span>
+  <button (click)="increment()" class="btn-increment">
+    <mat-icon class="text-16 align-middle">add</mat-icon>
+  </button>
+</div>
